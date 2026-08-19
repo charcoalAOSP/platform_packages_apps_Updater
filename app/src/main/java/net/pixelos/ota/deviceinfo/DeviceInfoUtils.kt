@@ -15,10 +15,10 @@ object DeviceInfoUtils : SettingsLibDeviceInfoUtils() {
 
     private const val PROP_AB_DEVICE = "ro.build.ab_update"
     private const val PROP_BUILD_DATE = "ro.build.date.utc"
-    private const val PROP_BUILD_TYPE = "net.pixelos.build_type"
+    private const val PROP_BUILD_TYPE = "ro.mod.build_type"
     private const val PROP_BUILD_VERSION = "ro.custom.version"
     private const val PROP_DEVICE = "ro.custom.device"
-    private const val PROP_OTA_BRANCH = "net.pixelos.version"
+    private const val PROP_OTA_BRANCH = "ro.modversion"
     private const val PROP_UPDATE_RECOVERY = "persist.vendor.recovery_update"
 
     // Read-only
