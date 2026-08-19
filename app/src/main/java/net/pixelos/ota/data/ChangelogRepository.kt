@@ -38,7 +38,7 @@ class ChangelogRepository(private val context: Context) {
         val device = DeviceInfoUtils.device
         val branch = DeviceInfoUtils.otaBranch
         require(device.isNotBlank()) { "Missing ro.custom.device" }
-        require(branch.isNotBlank()) { "Missing net.pixelos.version" }
+        require(branch.isNotBlank()) { "Missing ro.modversion" }
 
         val key = "$branch/$device"
         if (cachedKey == key) {
