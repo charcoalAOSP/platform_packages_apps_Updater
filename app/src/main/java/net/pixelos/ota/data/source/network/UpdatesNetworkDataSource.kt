@@ -24,10 +24,10 @@ class UpdatesNetworkDataSource(private val context: Context) {
                 "Missing ro.custom.device"
             }
             require(DeviceInfoUtils.otaBranch.isNotBlank()) {
-                "Missing net.pixelos.version"
+                "Missing moe.crescence.version"
             }
             require(DeviceInfoUtils.buildType.isNotBlank()) {
-                "Missing net.pixelos.build_type"
+                "Missing moe.crescence.build_type"
             }
             return base
                 .replace("{device}", DeviceInfoUtils.device)
